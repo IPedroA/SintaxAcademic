@@ -9,7 +9,8 @@ from database.models import db, Usuario
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:NtCn45_67()#$@localhost/mi_academia'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:NtCn45_67()#$@localhost/mi_academia'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://sytovutmxe:xfl58$$jmkwaoIOi@sintaxacademic-server.postgres.database.azure.com/sintaxacademic-database'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'DFDSFSD'
 
