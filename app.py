@@ -10,7 +10,7 @@ from database.models import db, Usuario
 app = Flask(__name__)
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:NtCn45_67()#$@localhost/mi_academia'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://sytovutmxe:xfl58$$jmkwaoIOi@sintaxacademic-server.postgres.database.azure.com/sintaxacademic-database'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://pedro@databaseacademic:NtCn45_67()#$@databaseacademic.database.windows.net/sintaxacademic?driver=ODBC+Driver+18+for+SQL+Server&encrypt=yes&trustServerCertificate=no'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'DFDSFSD'
 
@@ -162,4 +162,4 @@ def Register():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
